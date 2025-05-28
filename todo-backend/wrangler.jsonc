@@ -2,7 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "todo-backend",
   "main": "src/index.ts",
-  "compatibility_date": "2025-05-28"
+  "compatibility_date": "2025-05-28",
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],
@@ -21,13 +21,13 @@
   //     "bucket_name": "my-bucket"
   //   }
   // ],
-  // "d1_databases": [
-  //   {
-  //     "binding": "MY_DB",
-  //     "database_name": "my-database",
-  //     "database_id": ""
-  //   }
-  // ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "todo-with-hono",
+      "database_id": "3fa29576-a7ed-4e11-9b64-fe7afdf18379"
+    }
+  ]
   // "ai": {
   //   "binding": "AI"
   // },
